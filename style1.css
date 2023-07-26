@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia (serif);
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    min-height: 100vh;
+    height: auto;
+  }
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+
+  .box .warning
+  {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgb(196, 34, 34);
+    border-radius: 5px;
+    color: rgb(200, 33, 33);
+    background-color: rgb(255, 174, 174);
+  }
+
+  .box h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+  }
+  .box form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  form .text{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .text input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .text label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  .text input:focus ~ label,
+  .text input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+  }
+  .text input:focus ~ span::before,
+  .text input:valid ~ span::before{
+    width: 100%;
+  }
+  
+  .box input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  .box input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }
+
+  .box a{
+    padding: 15px 146px;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #2691d9;
+    background: white;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #2691d9;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .box a:hover{
+    background: #2691d9;
+    color: white;
+    transition: .5s;
+  }
+
+  .main .title{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid peachpuff;
+    margin-bottom: 50px;
+}
+
+.main a{
+    text-decoration: none;
+    text-align: center;
+    color: beige;
+    background-color: rgb(98, 98, 173);
+    width: 200px;
+    padding: 20px;
+    margin: 15px auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.main a:hover{
+    color: #b9b9b9;
+    transition: .5s;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+th, td{
+    border: 1px solid black;
+}
+
+thead{
+    background-color: rgb(78, 56, 56);
+    color: beige;
+}
+
+table a{
+    text-decoration: none;
+    color: rgb(199, 199, 45);
+}
+
+table a:hover{
+    color: #b9b9b9;
+    transition: .5s;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+.search ::placeholder{
+    color: beige;
+}
+
+.search input[type="submit"]{
+    width: auto;
+    height: 25px;
+    border: 1px solid black;
+    background: rgb(98, 98, 173);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400px;
+    cursor: pointer;
+    outline: none;
+  }
+ .search input[type="submit"]:hover{
+    border-color: white;
+    transition: .5s;
+  }
